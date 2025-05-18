@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,7 +7,81 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="./src/index.css">
   </head>
-  <body>
+  <body class="font-medium">
+     <!-- header -->
+      <header class="container mx-auto" style="background-image: url('./public/images/background.png');">
+        <nav class="top-0">
+          <!-- sidebar -->
+          <ul id="sidebar" class="absolute bg-fixed z-20 shadow-lg bg-white text-red-primary w-1/2 h-full top-0 ">
+            <div class="p-2 mb-5 flex justify-between items-center" style="background: linear-gradient(to top ,#B74358 , #F24B69);">
+              <div id="close-sidebar" class="flex items-center justify-center font-bold size-10  rounded-xl p-1 cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 stroke-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>                                                
+            </div>
+              <div>
+                <img class="w-30 h-10" src="./public/images/logo.png" alt="">
+              </div>
+
+            </div>
+            <li><a class="block px-4 py-2 border-b-1" href="#">خانه</a></li>
+            <li><a class="block px-4 py-2 border-b-1" href="#">ویژگی ها</a></li>
+            <li><a class="block px-4 py-2 border-b-1" href="#">گواهینامه ها</a></li>
+            <li><a class="block px-4 py-2 border-b-1" href="#">اخبار</a></li>
+            <li><a class="block px-4 py-2 border-b-1" href="#">پورتال مدیریت</a></li>
+          </ul>
+        </nav>
+        <!-- nav -->
+        <div id="backdrop" class="h-screen z-20 absolute  hidden"></div>
+        <div class="md:hidden flex justify-between items-center p-4 mb-5">
+          <div id="show-sidebar" class="flex items-center justify-center font-bold size-10  rounded-xl p-1 cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 stroke-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>            
+          </div>
+          <div>
+            <img src="./public/images/logo.png" alt="">
+          </div>
+        </div>
+
+        <!-- desktop navbar -->
+         <nav class="md:block hidden sticky z-10 top-0">
+         <div class="flex justify-between items-center py-10 px-15 ">
+          <ul class="text-white flex items-center gap-x-4 text-lg">
+            <li><a class="block p-2  ml-5" href="#"><img src="./public/images/logo.png" alt=""></a></li>
+            <li><a class="block p-2 " href="#">خانه</a></li>
+            <li><a class="block p-2 " href="#">ویژگی ها</a></li>
+            <li><a class="block p-2 " href="#">گواهینامه ها</a></li>
+            <li><a class="block p-2 " href="#">اخبار</a></li>
+            <li><a class="block p-2 " href="#">پورتال مدیریت</a></li>
+          </ul>
+          <button class="bg-white text-red-primary p-2 rounded-md text-sm cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">اکنون بازی کنید</button>
+         </div>
+         </nav>
+
+           <!-- image header -->
+        <div class="md:flex justify-center items-center p-4">
+
+          <div class="text-white md:order-1 mb-5 w-90 md:w-150">
+            <p class="md:text-sm text-[10px] tracking-wider mb-2">بازی کنید و پیشرفت کنید.</p>
+            <h1 class="md:block hidden text-2xl tracking-wider font-bold mb-4">برترین پلتفرم آموزش مغز</h1>
+            <h1 class="md:hidden text-sm tracking-wider font-bold mb-4">برترین برنامه آموزش مغز</h1>
+            <p class="md:text-lg text-[12px] tracking-wider mb-6">لوپ جایی است که داستان ها آشکار می شوند، ارتباطات شکل می گیرند و خاطرات به اشتراک گذاشته می شوند. چه قصه گو باشید، چه شنونده، یا جایی در این بین، در جامعه ما جایی برای شما وجود دارد.</p>
+            <button class="md:hidden bg-red-primary text-sm p-1.5 ml-2 rounded-md cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">بیشتر بیاموزید</button>
+            <button class="md:hidden bg-white text-red-primary text-sm p-1.5 rounded-md cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">بازی کن</button>
+            <button class="md:inline-block hidden bg-red-primary p-2 rounded-md ml-4 cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">برای پیوستن کد را وارد کنید</button>
+            <button class="md:inline-block hidden bg-white text-red-primary p-2 rounded-md cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">پیوستن</button>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <img class="md:w-120 md:h-120 w-100 h-100" src="./public/images/test-exam-study-adult-child_01 1.png" alt="">
+          </div>
+
+        </div>
+
+
+      </header>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

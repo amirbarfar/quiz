@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family:'bold';
+    src: url(../public/font/Anjoman-Bold.woff2);
+}
+
+@font-face {
+    font-family:'medium';
+    src: url(../public/font/Anjoman-Medium.woff2);
+}
+
+@theme{
+    --font-bold : 'bold';
+    --font-medium : 'medium';
+    --color-red-primary: #FF5D7A;
+
+}
+
