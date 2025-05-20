@@ -1,34 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/index.css">
-  </head>
-  <body class="font-medium">
-     <!-- header -->
-      <header class="container mx-auto" style="background-image: url('./public/images/background.png');">
-        <nav class="top-0">
-          <!-- sidebar -->
-          <ul id="sidebar" class="absolute bg-fixed z-20 shadow-lg bg-white text-red-primary w-1/2 h-full top-0 ">
-            <div class="p-2 mb-5 flex justify-between items-center" style="background: linear-gradient(to top ,#B74358 , #F24B69);">
-              <div id="close-sidebar" class="flex items-center justify-center font-bold size-10  rounded-xl p-1 cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 stroke-white">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>                                                
+    <title>Vite App</title>
+</head>
+<body class="font-medium bg-bg-body">
+    <!-- header -->
+    <header style="background-image: url('./public/images/background.png');">
+        <div>
+         <!-- sidebar -->
+          <ul id="sidebar" class="absolute z-20 bg-fixed bg-white w-70 h-full mt-0">
+            <div class="flex justify-between items-center p-4 mb-5" style="background: linear-gradient(to top ,#B74358 , #F24B69);">
+                <div class="flex justify-center items-center gap-4">
+                    <div class="bg-white rounded-full w-8 h-8 flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                          </svg>                          
+                    </div>
+                    <p class="text-white">نام کاربری</p>
+                </div>
+                <div id="close-sidebar"  class="cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 stroke-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>    
+                </div>
             </div>
-              <div>
-                <img class="w-30 h-10" src="./public/images/logo.png" alt="">
-              </div>
-
-            </div>
-            <li><a class="block px-4 py-2 border-b-1" href="#">خانه</a></li>
-            <li><a class="block px-4 py-2 border-b-1" href="#">ویژگی ها</a></li>
-            <li><a class="block px-4 py-2 border-b-1" href="#">گواهینامه ها</a></li>
-            <li><a class="block px-4 py-2 border-b-1" href="#">اخبار</a></li>
-            <li><a class="block px-4 py-2 border-b-1" href="#">پورتال مدیریت</a></li>
+            <li><a class="block p-4 border-b-1 border-pink-primary text-pink-primary" href="./index.html">خانه</a></li>
+            <li><a class="block p-4 border-b-1 border-pink-primary text-pink-primary" href="#">ویژگی ها</a></li>
+            <li><a class="block p-4 border-b-1 border-pink-primary text-pink-primary" href="#">گواهینامه ها</a></li>
+            <li><a class="block p-4 border-b-1 border-pink-primary text-pink-primary" href="#">اخبار</a></li>
+            <li><a class="block p-4 border-b-1 border-pink-primary text-pink-primary" href="#">پورتال مدیریت</a></li>
           </ul>
         </nav>
         <!-- nav -->
@@ -39,49 +42,49 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>            
           </div>
-          <div>‍
+          <div>
             <img src="./public/images/logo.png" alt="">
           </div>
         </div>
 
-        <!-- desktop navbar -->
-         <nav class="md:block hidden sticky z-10 top-0">
-         <div class="flex justify-between items-center py-10 px-15 ">
-          <ul class="text-white flex items-center gap-x-4 text-lg">
-            <li><a class="block p-2  ml-5" href="#"><img src="./public/images/logo.png" alt=""></a></li>
-            <li><a class="block p-2 " href="#">خانه</a></li>
-            <li><a class="block p-2 " href="#">ویژگی ها</a></li>
-            <li><a class="block p-2 " href="#">گواهینامه ها</a></li>
-            <li><a class="block p-2 " href="#">اخبار</a></li>
-            <li><a class="block p-2 " href="#">پورتال مدیریت</a></li>
-          </ul>
-          <button class="bg-white text-red-primary p-2 rounded-md text-sm cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">اکنون بازی کنید</button>
-         </div>
-         </nav>
+          <!-- desktop navbar -->
 
-           <!-- image header -->
-        <div class="md:flex justify-center items-center p-4">
+          <nav class="container mx-auto md:block hidden top-0 ">
+            <div class="flex justify-between items-center  px-4 py-6">
+                <ul class="flex items-center lg:gap-x-4 gap-x-2 text-white lg:text-lg text-sm">
+                    <li><a class="block p-2" class="block p-2  ml-5" href="#"><img src="./public/images/logo.png" alt=""></a></li>
+                    <li><a class="block p-2" href="./index.html">خانه</a></li>
+                    <li><a class="block p-2" href="#">ویژگی ها</a></li>
+                    <li><a class="block p-2" href="#">گواهینامه ها</a></li>
+                    <li><a class="block p-2" href="#">اخبار</a></li>
+                    <li><a class="block p-2" href="#">پورتال مدیریت</a></li>
+                </ul>
+                <button class="bg-white text-pink-primary  p-3 rounded-md text-base cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">اکنون بازی کنید</button>
+            </div>
+          </nav>
 
-          <div class="text-white md:order-1 mb-5 w-90 md:w-150">
-            <p class="md:text-sm text-[10px] tracking-wider mb-2">بازی کنید و پیشرفت کنید.</p>
-            <h1 class="md:block hidden text-2xl tracking-wider font-bold mb-4">برترین پلتفرم آموزش مغز</h1>
-            <h1 class="md:hidden text-sm tracking-wider font-bold mb-4">برترین برنامه آموزش مغز</h1>
-            <p class="md:text-lg text-[12px] tracking-wider mb-6">لوپ جایی است که داستان ها آشکار می شوند، ارتباطات شکل می گیرند و خاطرات به اشتراک گذاشته می شوند. چه قصه گو باشید، چه شنونده، یا جایی در این بین، در جامعه ما جایی برای شما وجود دارد.</p>
-            <button class="md:hidden bg-red-primary text-sm p-1.5 ml-2 rounded-md cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">بیشتر بیاموزید</button>
-            <button class="md:hidden bg-white text-red-primary text-sm p-1.5 rounded-md cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">بازی کن</button>
-            <button class="md:inline-block hidden bg-red-primary p-2 rounded-md ml-4 cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">برای پیوستن کد را وارد کنید</button>
-            <button class="md:inline-block hidden bg-white text-red-primary p-2 rounded-md cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">پیوستن</button>
-          </div>
+          <!-- image header  -->
+           <div class="md:flex justify-around items-center p-4">
+            <div class="order-1 w-80 sm:w-125 md:w-150">
+                <p class="text-white text-xs md:text-sm tracking-wider mb-2">بازی کنید و پیشرفت کنید.</p>
+                <h1 class="md:block hidden font-bold text-2xl text-white tracking-wider mb-4">برترین پلتفرم آموزش مغز</h1>
+                <h1 class="md:hidden text-white font-bold text-lg sm:text-xl tracking-wider mb-4">برترین برنامه آموزش مغز</h1>
+                <p class="md:text-lg sm:text-base text-sm text-white tracking-wider mb-4">لوپ جایی است که داستان ها آشکار می شوند، ارتباطات شکل می گیرند و خاطرات به اشتراک گذاشته می شوند. چه قصه گو باشید، چه شنونده، یا جایی در این بین، در جامعه ما جایی برای شما وجود دارد.</p>
+                <button class="md:hidden bg-red-primary text-white text-sm p-1.5 ml-2 rounded-md cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">بیشتر بیاموزید</button>
+                <button class="md:hidden bg-white text-red-primary text-sm p-1.5 rounded-md cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">بازی کن</button>
+                <a href="./src/login.html"><button class="md:inline-block hidden bg-red-primary text-white p-2 rounded-md ml-4 cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">برای پیوستن کد را وارد کنید</button></a>
+                <button class="md:inline-block hidden bg-white text-red-primary p-2 rounded-md cursor-pointer transitio delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">پیوستن</button>
+              
+            </div>
+            <div class="flex justify-center items-center">
+                <img class="md:w-120 md:h-120 w-100 h-100" src="./public/images/test-exam-study-adult-child_01 1.png" alt="">
+              </div>
+           </div>
 
-          <div class="flex justify-center items-center">
-            <img class="md:w-120 md:h-120 w-100 h-100" src="./public/images/test-exam-study-adult-child_01 1.png" alt="">
-          </div>
-
-        </div>
+    </header>
 
 
-      </header>
 
     <script type="module" src="/src/main.js"></script>
-  </body>
+</body>
 </html>
