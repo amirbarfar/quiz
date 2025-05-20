@@ -1,7 +1,6 @@
 {
-  "name": "worker-name",
+  "name": "quiz",
   "compatibility_date": "2025-05-20",
-  "main" : "src/main.js",
   "assets": {
     "directory": "./dist"
   }
