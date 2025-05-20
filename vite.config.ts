@@ -4,7 +4,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  root: './dist',
+  root: './',
   build: {
     outDir: 'dist',
   },
