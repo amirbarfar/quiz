@@ -2,6 +2,6 @@
   "name": "quiz-worker",
   "compatibility_date": "2025-05-20",
   "assets": {
-    "directory": "./dist"
+‍     directory = "./dist"
   }
 }
