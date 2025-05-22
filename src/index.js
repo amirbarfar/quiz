@@ -1,18 +1,15 @@
-const showSidebarBtn = document.getElementById("show-sidebar");
-const closeSidebarBtn = document.getElementById("close-sidebar");
-const sidebar = document.getElementById("sidebar");
+const sidebar = document.getElementById('sidebar')
+const close = document.getElementById('close-sidebar')
+const menu = document.getElementById('show-sidebar')
 const backdrop = document.getElementById("backdrop");
 
-function closeSidebar(){
-    backdrop.classList.add("hidden");
-    sidebar.classList.add("hidden");
-}
 
-function showSidebar(){
-    backdrop.classList.remove("hidden");
-    sidebar.classList.remove("hidden");
-}
+menu.addEventListener('click', () => {
+    sidebar.style.opacity = '100%'
+    sidebar.style.translate = 0;
+})
 
-showSidebarBtn.addEventListener("click",showSidebar);
-closeSidebarBtn.addEventListener("click",closeSidebar);
-backdrop.addEventListener("click",closeSidebar);
+close.addEventListener('click', () => {
+    sidebar.style.opacity = 0
+    sidebar.style.translate = "100%";
+})
