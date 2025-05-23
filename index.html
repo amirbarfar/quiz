@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Vite App</title>
 </head>
 
@@ -14,7 +15,7 @@
     <div>
       <!-- sidebar -->
       <ul id="sidebar"
-        class="absolute z-20 bg-fixed bg-white w-70 h-full mt-0 transition-all ease-in-out duration-500 transform translate-x-full">
+class="absolute z-20 bg-fixed bg-white w-70 h-full mt-0 transition-all ease-in-out duration-500 transform translate-x-full">
         <div class="flex justify-between items-center p-4 mb-5"
           style="background: linear-gradient(to top ,#B74358 , #F24B69);">
           <div class="flex justify-center items-center gap-4">
@@ -81,7 +82,7 @@
       <!-- image header  -->
       <div
         class="flex container mx-auto justify-around items-center p-4 w-full max-lg:flex-col max-sm:my-16 max-sm:gap-16">
-        <div class="flex justify-center items-center">
+        <div class="md:order-1 flex justify-center items-center">
           <img class="max-lg:w-2/3 max-sm:w-full" src="./public/images/test-exam-study-adult-child_01 1.png"
             alt="header-image">
         </div>
@@ -141,36 +142,81 @@
     </div>
   </div>
 
-<<<<<<< HEAD
-    <div class="">
-      <div class="text-Dark-Black text-center">
-        <p class="text-orange-primary">رویدادها ccc</p>
-        <h1 class="">جدیدترین رویداد کوئیز</h1>
-        <div class="text-xs font-semibold p-2">
-          <button class="border-1 py-2 px-2.5 ml-2 rounded-2xl">مسابقه</button>
-          <button class="border-1 py-2 px-2.5 rounded-2xl">به روزرسانی جدید</button>
-        </div>
-        <div class="text-xs font-semibold p-2">
-          <button class="border-1 py-2 px-2.5 ml-2 rounded-2xl">جایزه بزرگ آخر هفته</button>
-          <button class="border-1 py-2 px-2.5  rounded-2xl">خالق 2024</button>
-        </div>
-        <div class="text-xs font-semibold p-2">
-          <button class="bg-amber-200 py-2 px-2.5 ml-2 rounded-2xl">رقابت دانش عمومی هفتگی</button>
-          <button class="border-1 py-2 px-2.5  rounded-2xl">کوئیز های سریع</button>
-        </div>
-      </div>
 
-      <div>
-        <div class="bg-orange-secondary"></div>
-        <div></div>
-        <div></div>
-      </div>
+<!-- Swiper -->
+<div class="container mx-auto gap-x-2 flex flex-col md:flex-row p-10 ">
+  <div class="text-Dark-Black  flex flex-col justify-center md:justify-start items-center md:items-start text-center md:text-start gap-3 mb-5">
+    <p class="md:block hidden text-orange-primary">رویدادها ccc</p>
+    <p class="md:hidden block text-orange-primary">رویداد ویژه</p>
+    <h1 class="md:block hidden">جدیدترین رویداد کوئیز</h1>
+    <h1 class="md:hidden block">آخرین رویداد ایزی</h1>
+    <div class="text-xs font-semibold ">
+      <button class="border-1 py-2 px-2.5 ml-2 rounded-2xl cursor-pointer">مسابقه</button>
+      <button class="border-1 py-2 px-2.5 rounded-2xl cursor-pointer">به روزرسانی جدید</button>
     </div>
+    <div class="text-xs font-semibold ">
+      <button class="border-1 py-2 px-2.5 ml-2 rounded-2xl cursor-pointer">جایزه بزرگ آخر هفته</button>
+      <button class="border-1 py-2 px-2.5  rounded-2xl cursor-pointer">خالق 2024</button>
+    </div>
+    <div class="text-xs font-semibold">
+      <button class="bg-yellow-secondary-dark py-2 px-2.5 ml-2 rounded-2xl cursor-pointer">رقابت دانش عمومی هفتگی</button>
+      <button class="border-1 py-2 px-2.5  rounded-2xl cursor-pointer">کوئیز های سریع</button>
+    </div>
+    <div class="flex justify-center items-center md:items-start gap-x-4">
+      <button class="flex justify-center items-center border-1 rounded-full cursor-pointer w-12 h-12">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>               
+      </button>
+      <button class="flex justify-center items-center border-1 rounded-full cursor-pointer w-12 h-12">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+        </svg>        
+      </button>
+    </div>
+  </div>
 
-    <script type="module" src="./src/index.js"></script>
-=======
+  <div #swiperRef="" class="swiper mySwiper md:w-4xl w-[800px] h-[500px] mx-[20px]" >
+    <div class="swiper-wrapper">
+      <div class=" swiper-slide flex justify-center items-center  text-md   text-center  bg-orange-secondary rounded-4xl shadow-xl max-w-[300px] mx-auto py-8 ">
+        <h1 class="text-white text-4xl font-bold mb-4 ">جاوا</h1>
+        <p class="text-white text-lg mb-6 opacity-80">توضیحات :</p>
+        <p class="text-white text-sm mb-50 opacity-90 leading-relaxed">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Error, blanditiis.</p>
+        <button class="bg-yellow-secondary-dark text-gray-800 py-2 px-14 rounded-full shadow-md cursor-pointer hover:bg-yellow-300 text-lg">شروع</button>
+      </div>
+  
+      <div class=" swiper-slide flex justify-center items-center  text-md   text-center  bg-green-primary-light rounded-4xl shadow-xl max-w-[300px] mx-auto py-8">
+        <h1 class="text-white text-4xl font-bold mb-4 ">توسعه وب</h1>
+        <p class="text-white text-lg mb-6 opacity-80">توضیحات :</p>
+        <p class="text-white text-sm opacity-90 leading-relaxed">فیزیک</p>
+        <p class="text-white text-sm opacity-90 leading-relaxed">شیمی</p>
+        <p class="text-white text-sm opacity-90 leading-relaxed">زیست شناسی</p>
+        <p class="text-white text-sm mb-50 opacity-90 leading-relaxed">ستاره شناسی</p>
+        <button class="bg-yellow-secondary-dark text-gray-800 py-2 px-14 rounded-full shadow-md cursor-pointer hover:bg-yellow-300 text-lg">شروع</button>
+      </div>
+      
+      <div class=" swiper-slide flex justify-center items-center  text-md   text-center  bg-purple-primary rounded-4xl shadow-xl max-w-[300px] mx-auto py-8">
+        <h1 class="text-white text-4xl font-bold mb-4 ">پایتون</h1>
+        <p class="text-white text-lg mb-6 opacity-80">توضیحات :</p>
+        <p class="text-white text-sm opacity-90 leading-relaxed">فیلم ها</p>
+        <p class="text-white text-sm opacity-90 leading-relaxed">سریال ها</p>
+        <p class="text-white text-sm opacity-90 leading-relaxed">موسیقی</p>
+        <p class="text-white text-sm mb-50 opacity-90 leading-relaxed">سلبریتی ها</p>
+        <button class="bg-yellow-secondary-dark text-gray-800 py-2 px-14 rounded-full shadow-md cursor-pointer hover:bg-yellow-300 text-lg">شروع</button>
+      </div>
+</div>
+
+
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+
+
+<!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="./src/index.js"></script>
->>>>>>> b4eb5b8407c7e6f272f70d1362fb435c393b8193
 </body>
 
 </html>
